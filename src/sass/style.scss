@@ -1,0 +1,33 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts.scss';
+@import 'base/switcher.scss';
+@import 'base/variables.scss';
+@import './blocks/header.scss';
+@import './blocks/sidebar.scss';
+@import './blocks/center.scss';
+@import './blocks/consultant.scss';
+@import './blocks/frame.scss';
+
+* {
+    font-family: "SF Pro Text";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+.content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 240px 672px 320px;
+    column-gap: 32px;
+}
+
+@import './blocks/media.scss';

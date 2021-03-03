@@ -1,0 +1,115 @@
+.rightblock {
+    width: 320px;
+    margin-top: 64px;
+    &-active {
+        display: block !important;
+        position: fixed;
+        right: 45px;
+        top: -1px;
+    }
+    .block {
+        background: #FFFFFF;
+        box-shadow: 0px 8px 15px rgba(0, 23, 83, 0.1);
+        border-radius: 8px;
+    }
+    &__consult {
+        padding: 33px;
+        min-height: 297px;
+        &-top {
+            display: flex;
+            justify-content: space-between;
+            align-items:flex-start;
+            &-title {
+                font-size: 15px;
+                line-height: 20px;
+                letter-spacing: -0.15px;
+                color: #101A4B;
+            }
+        }
+        &-center {
+            display: grid;
+            grid-template-columns: 56px 168px;
+            grid-template-rows: minmax(50px,auto);
+            column-gap: 32px;
+            margin-top: 33px;
+        }
+        &-right {
+            input {
+                padding: 12px 16px;
+                width: 168px;
+                height: 40px;
+                background: #FFFFFF;
+                border: 1px solid #E9F0FE;
+                border-radius: 6px;
+                margin-bottom: 10px;
+                font-size: 13px;
+                line-height: 16px;
+                letter-spacing: -0.15px;
+                color: $grey-color;
+            }
+        }
+        &-img {
+            position: relative;
+            width: 56px;
+            height: 56px;
+            background: #F5F6F8;
+            border: 1px dashed $grey-color;
+            border-radius: 100%;
+            box-sizing: border-box;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &-maxload {
+            margin-top: 7px;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 16px;
+            text-align: center;
+            letter-spacing: -0.15px;
+            color: #0351DF;
+        }
+        &-text {
+            margin-top: 30px;
+            font-size: 13px;
+            line-height: 16px;
+            letter-spacing: -0.15px;
+            color: $grey-color;
+        }
+    }
+    &__format {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 23px 32px;
+        min-height: 86px;
+        margin-top: 25px;
+        &-text {
+            width: 209px;
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: -0.15px;
+            color: #101A4B;
+        }
+    }
+}
+.consultant {
+    &__btn {
+        display: none;
+        width: 150px;
+        height: 30px;
+        background-color: #e5efff;
+        position: fixed;
+        top: 175px;
+        right: -60px;
+        border-radius: 0 0 5px 5px;
+        font-size: 11px;
+        line-height: 11px;
+        text-align: center;
+        padding: 8px 10px;
+        transform: rotate(90deg);
+    }
+}
